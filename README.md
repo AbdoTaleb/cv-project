@@ -23,3 +23,4 @@ _(Replace with actual link after deployment)_
 
 ## 📁 Project Structure
 
+![screenshot](./images/abdotaleb-cv-project.png)

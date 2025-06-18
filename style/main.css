@@ -314,4 +314,32 @@ body {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #444;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+    width: 95%;
+    margin: 1rem auto;
+  }
+  .sidebar,
+  .content {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .projects .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-summary p,
+  .work-experience p,
+  .education p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .project-item {
+    padding: 1rem;
+  }
+  .section-title {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
