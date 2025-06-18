@@ -8,7 +8,7 @@ It showcases my experience, education, skills, projects, and portfolio in a clea
 ## 🌐 Live Demo
 
 🔗 [View Live on GitHub Pages](https://abdotaleb.github.io/cv-project/)  
-_(Replace with actual link after deployment)_
+
 
 ---
 
