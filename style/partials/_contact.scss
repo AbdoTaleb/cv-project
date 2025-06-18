@@ -1,0 +1,26 @@
+.contact-list {
+  list-style: none;
+
+  li {
+    margin-bottom: 0.8rem;
+
+    .label {
+      display: block;
+      font-weight: bold;
+      color: $light;
+      margin-bottom: 0.2rem;
+    }
+
+    a {
+      color: #ccc;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,45 @@
+.timeline {
+  position: relative;
+  margin-left: 1.5rem;
+  padding-left: 2rem;
+  border-left: 2px solid #ccc;
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+
+    .timeline-dot {
+      position: absolute;
+      left: -1.05rem;
+      top: 0.3rem;
+      width: 14px;
+      height: 14px;
+      background-color: $primary;
+      border-radius: 50%;
+      border: 2px solid white;
+      z-index: 2;
+    }
+
+    .timeline-content {
+      h3 {
+        font-size: 1.1rem;
+        color: $dark;
+      }
+
+      .job-period {
+        font-style: italic;
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #444;
+      }
+    }
+  }
+}

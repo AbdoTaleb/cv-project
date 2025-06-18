@@ -1,0 +1,25 @@
+.education {
+  margin-bottom: 2rem;
+
+  .edu-item {
+    margin-bottom: 1.5rem;
+
+    h3 {
+      font-size: 1.1rem;
+      color: $dark;
+    }
+
+    .edu-period {
+      font-size: 0.9rem;
+      color: #777;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #444;
+    }
+  }
+}

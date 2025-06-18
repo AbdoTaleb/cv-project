@@ -1,0 +1,15 @@
+.languages-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.95rem;
+    color: #ddd;
+
+    strong {
+      color: $primary;
+    }
+  }
+}

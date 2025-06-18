@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 2rem auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  background-color: #f0f4f8;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background-color: #1a1a1a;
+  color: #fff;
+  width: 35%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fbbc05;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  color: #fbbc05;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
+  color: #fbbc05;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-list {
+  list-style: none;
+}
+.contact-list li {
+  margin-bottom: 0.8rem;
+}
+.contact-list li .label {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.contact-list li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.contact-list li a:hover {
+  color: #fbbc05;
+  text-decoration: underline;
+}
+
+.skill {
+  margin-bottom: 1.2rem;
+}
+.skill .skill-name {
+  font-size: 0.95rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  display: block;
+  text-align: left;
+}
+.skill .skill-bar {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.skill .skill-bar .skill-progress {
+  height: 100%;
+  background-color: #fbbc05;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.6s ease;
+}
+
+.interests-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.interests-list li {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #fbbc05;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.content {
+  width: 65%;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f5f1e8, #ffffff);
+}
+.content section {
+  margin-bottom: 2.5rem;
+}
+.content section + section {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+}
+.content .section-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #fbbc05;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.content .profile-summary p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 90%;
+}
+.content .work-experience .job,
+.content .work-experience .edu-item,
+.content .education .job,
+.content .education .edu-item {
+  margin-bottom: 1.5rem;
+}
+.content .work-experience .job h3,
+.content .work-experience .edu-item h3,
+.content .education .job h3,
+.content .education .edu-item h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+}
+.content .work-experience .job .job-period,
+.content .work-experience .job .edu-period,
+.content .work-experience .edu-item .job-period,
+.content .work-experience .edu-item .edu-period,
+.content .education .job .job-period,
+.content .education .job .edu-period,
+.content .education .edu-item .job-period,
+.content .education .edu-item .edu-period {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.content .work-experience .job .job-title,
+.content .work-experience .edu-item .job-title,
+.content .education .job .job-title,
+.content .education .edu-item .job-title {
+  display: block;
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #444;
+}
+.content .work-experience .job p,
+.content .work-experience .edu-item p,
+.content .education .job p,
+.content .education .edu-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+.content .portfolio .portfolio-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+.content .portfolio .portfolio-item p a {
+  color: #fbbc05;
+  text-decoration: none;
+  font-weight: bold;
+}
+.content .portfolio .portfolio-item p a:hover {
+  text-decoration: underline;
+}
+
+.education {
+  margin-bottom: 2rem;
+}
+.education .edu-item {
+  margin-bottom: 1.5rem;
+}
+.education .edu-item h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+.education .edu-item .edu-period {
+  font-size: 0.9rem;
+  color: #777;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.education .edu-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.languages-list {
+  list-style: none;
+  padding-left: 0;
+}
+.languages-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+  color: #ddd;
+}
+.languages-list li strong {
+  color: #fbbc05;
+}
+
+.projects {
+  margin-bottom: 2rem;
+}
+.projects .projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.projects .project-item {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projects .project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.projects .project-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+.projects .project-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+.projects .project-item p a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fbbc05;
+  font-weight: bold;
+  text-decoration: none;
+}
+.projects .project-item p a:hover {
+  text-decoration: underline;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 1.5rem;
+  padding-left: 2rem;
+  border-left: 2px solid #ccc;
+}
+.timeline .timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+.timeline .timeline-item .timeline-dot {
+  position: absolute;
+  left: -1.05rem;
+  top: 0.3rem;
+  width: 14px;
+  height: 14px;
+  background-color: #fbbc05;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 2;
+}
+.timeline .timeline-item .timeline-content h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+.timeline .timeline-item .timeline-content .job-period {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.timeline .timeline-item .timeline-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}/*# sourceMappingURL=main.css.map */
